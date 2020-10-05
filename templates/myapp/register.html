@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Labour</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/loundry.css'%}">
+	 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <script src="{% static 'js/jquerry-3.3.1.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+</head>
+
+<body style="background:#ffffe6;">
+  <div>
+        <div class="head">
+  <marquee hspace="200px"><h3>Thank You For Visiting ....</h3></marquee>
+        </div>
+
+
+
+    <nav class="navbar navbar-default .bg-secondary" style="background-color:   #2c3e50 ; color: white;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-target='#mainNavbar' data-toggle='collapse'>
+
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="mainNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><img src="img/logo.png" width="60px" height="60px;"></li>
+          <li style=" padding-left: 6px; padding-top:6px; height: 50px; font-size: 30px;"><b>  उम्मीद की साइकिल</b></li></ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'index'%}">Home</a></li>
+          <li><a href="{% url 'complain'%}">Complain</a></li>
+          <li><a href="#">Our Work</a></li>
+
+          <li><a href="#">Contact Us</a></li>
+          <li class="active"><a href="{% url 'register'%}">Register</a></li>
+          <li><a href="{% url 'login'%}">Login</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+
+		<div class="jumbotron" style="background-color: #D4EFDF">
+		<div class="container">
+		<form action="{% url 'register'%}" method="POST">
+          {% csrf_token %}
+			<caption><h3>Register Here!!!</h3></caption>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Name</label>
+      <input type="text" class="form-control" id="inputEmail4" name="name" placeholder="Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Father Name</label>
+      <input type="text" class="form-control" id="inputPassword4" name="father" placeholder="Father Name">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Mobile Number</label>
+      <input type="number" name="mobile" class="form-control" id="inputEmail4" placeholder="Mobile Number">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="input Password4">Create Password</label>
+      <input type="password" name="pw" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+
+
+ 
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputState">Gram or Nagar Panchayat</label>
+      <select id="inputState" name="gramp" class="form-control">
+        <option selected>Choose...</option>
+        <option>Bijawar</option>
+        <option>Gulganj</option>
+        <option>Baksoi</option>
+        <option>Gulat</option>
+        <option>Dilari</option>
+        <option>Angour</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Gram</label>
+      <select id="inputState" name="gram" class="form-control">
+        <option selected>Choose...</option>
+        
+        <option>Gulganj</option>
+        <option>Shahgarh</option>
+        <option>Baksoi</option>
+        <option>Gulat</option>
+        <option>Badagaon</option>
+      </select>
+    </div>
+</div>
+    <div class="form-row">
+    	  <div class="form-group col-md-12">
+  <button type="submit" value="register" class="btn btn-primary">Sign in</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+
+
+	</div>
+</body>
+</html>

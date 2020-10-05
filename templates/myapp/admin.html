@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Labour</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/loundry.css'%}">
+	 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <script src="{% static 'js/jquerry-3.3.1.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+</head>
+
+<body style="background:#ffffe6;">
+
+  <div>
+      
+
+
+    <nav class="navbar navbar-default .bg-secondary" style="background-color:   #2c3e50 ; color: white;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-target='#mainNavbar' data-toggle='collapse'>
+
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="mainNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><img src="{% static 'img/logo.png'%}" width="60px" height="60px;"></li>
+          <li style=" padding-left: 6px; padding-top:6px; height: 50px; font-size: 30px;"><b>  उम्मीद की साइकिल</b></li></ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li><a href="{% url 'logout'%}">Logout</a></li>
+
+        </ul>
+      </div>
+    </nav>
+     <!-- Side navigation -->
+<div class="sidenav">
+  <a href="{%url 'adminview' %}">View Complain</a>
+  <a href="#">My Blog</a>
+  <a href="#">Upload Scheme</a>
+  <a href="#">Gallery</a>
+</div>
+
+<!-- Page content -->
+<div class="jumbotron" style="margin-left:200px; padding:10px;">
+<h3><b><font color="#003366">Welcome MLA Rajesh Bablu Shukla </font></b></h3>
+
+{%if data%}
+  <table  align="center" text_align="center" border="2px solid black" cellpadding="2" cellspacing="2" padding="20px">
+  <thead text-align="center">
+
+        <th>Complain Id</th>
+        <th>User Name</th>
+        <th>User Mobile No.</th>
+        <th>User Father Name</th>
+        <th>Department</th>
+        <th>Gram Nagar</th>
+        <th>Complain Subject</th>
+        <th>Complain Description</th>
+        <th>Files</th>
+        <th>Status</th>
+        <th>Change Status</th>
+        </thead>
+        <tbody>
+        {%for i in data %}
+
+        <tr>
+
+            <td>{{i.id}}</td>
+            <td>{{i.user.euser.firname}}</td>
+            <td>{{i.user}}</td>
+            <td>{{i.user.euser.fname}}</td>
+            <td>{{i.department}}</td>
+            <td>{{i.gram_nagar}}</td>
+            <td>{{i.com_subject}}</td>
+            <td>{{i.description}}</td>
+            <td><a href="{{i.upload_file.url}}">{{i.upload_file}}</a><a/></td>
+            <td>{{i.status}}</td>
+            <td><b><a href="{% url 'changestatus' i.id %}">Change Status</a></b></td>
+
+        </tr>
+        {%endfor%}
+        </tbody>
+  </table>
+    {%endif%}
+
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+.navbar-default .navbar-collapse .navbar-nav > li > a:hover, 
+.navbar-default .navbar-collapse .navbar-nav >.active >a, .navbar-default .navbar-collapse  .navbar-nav > li > a:focus {
+    background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637,  #212f3d ); 
+    color: white;
+}
+.navbar-default .navbar-collapse .navbar-nav > li > a{
+	color: white;
+	font-size: 15px;
+}
+
+
+
+
+nav{
+	height:60px;
+	 position: fixed;
+  top: 0px;
+  font-size: 14px;
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding: 0px 0px;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: bold;
+color: white;
+}
+ul li a{
+	color: red;
+}
+
+.container
+{
+	background-image: url('labimg.jpg');
+	background-size: cover;
+	margin-top: 0px;
+}
+		.head
+{
+	height: 50px;
+background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+	width: 100%;
+	padding-bottom: 16px;
+}
+#mainbar
+{
+	height: 100px;
+	width: 100%;
+	background-color: blue;
+}
+#about
+{
+   height: 250px;
+   
+   text-align: center;
+border-radius: 0px 0px 20px 20px;
+   margin-left:  13px;
+   margin-right: 13px;
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+}
+
+#login{
+	height: 140px;
+	background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+	text-align: center;
+	border-radius: 20px;
+	margin: 7px;
+margin-left: 20px;
+	padding: 4px;
+
+}
+body{
+	background-color: "#ccffcc";
+	margin: 0px;
+}
+#about1{
+background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+	height: 40px;
+	margin-left:  13px;
+   margin-right: 13px;
+   margin-top: 12px;
+   text-align: center;
+   color: white;
+   border-radius: 20px 20px 0px 0px;
+   padding-bottom: 8px;
+}
+#news{
+	margin-right: 11px;
+	margin-left: 11px;
+}
+#image{
+	max-width:100%; 
+	padding: 0px;
+	 margin-top: 0px; 
+	 border-radius: 20px;
+}
+img {
+  float: left;
+  padding:  10px;
+ padding-right:  4px;
+ border: 2px solid black;
+}
+footer{
+
+    background-color: #212f3d;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.facebook
+{
+	padding-left: 30px;
+	padding-top: 8px;
+}
+.fa-instagram {
+    background: linear-gradient(to bottom, #6600ff 0%, #ff3300 100%);  color: white;
+}
+
+
+
+/* admin login*/
+.sidenav {
+  height: 500px; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+ /* Stay on top */
+ /* Stay at the top */
+ 
+  background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637,  #212f3d ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color:black;
+}
+
+/* Style page content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0px 20px;
+  background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.complainview{
+margin-left: 200px;
+padding: 0px 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 300px) {
+  .sidenav {padding-top: 0px;}
+  .sidenav a {font-size: 18px;}
+/*Login*/
+
+      
+        a{
+         text-decoration:none !important;
+         }
+         h1,h2,h3{
+         font-family: 'Kaushan Script', cursive;
+         }
+          .myform{
+		position: relative;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 1rem;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+		pointer-events: auto;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid rgba(0,0,0,.2);
+		border-radius: 1.1rem;
+		outline: 0;
+		max-width: 500px;
+		 }
+         .tx-tfm{
+         text-transform:uppercase;
+         }
+         .mybtn{
+         border-radius:50px;
+         }
+        
+         .login-or {
+         position: relative;
+         color: #aaa;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         }
+         .span-or {
+         display: block;
+         position: absolute;
+         left: 50%;
+         top: -2px;
+         margin-left: -25px;
+         background-color: #fff;
+         width: 50px;
+         text-align: center;
+         }
+         .hr-or {
+         height: 1px;
+         margin-top: 0px !important;
+         margin-bottom: 0px !important;
+         }
+         .google {
+         color:#666;
+         width:100%;
+         height:40px;
+         text-align:center;
+         outline:none;
+         border: 1px solid lightgrey;
+         }
+          form .error {
+         color: #ff0000;
+         }
+         #second{display:none;}
+
+		.head
+{
+	height: 50px;
+	background-color: #F5B7B1;
+	width: 100%;
+}
+#mainbar
+{
+	height: 100px;
+	width: 100%;
+	background-color: blue;
+}
+#about
+{
+   height: 400px;
+   background-color: "green";
+   border-radius: 2px;
+}
